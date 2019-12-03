@@ -51,11 +51,16 @@ class Menu{
 					e.showArray(e.getArray());
 					Quicksort q=new Quicksort();
 					q.quicksort(e.getArray(),0,e.getArray().length-1);
-					System.err.println("___________DESPUES__________");
+					System.err.println("___________QUICKSORT __________");
 					e.showArray(e.getArray());
 					break;
 				case 2:
+					System.err.println("___________ANTES__________");
+					e.showArray(e.getArray());
 					Bubblesort b=new Bubblesort();
+					b.bubble(e.getArray());
+					System.err.println("___________BUBBLESORT__________");
+					e.showArray(e.getArray());
 					break;
 				case 3:
 					Radix r=new Radix();
