@@ -51,7 +51,7 @@ class Menu{
 					e.showArray(e.getArray());
 					Quicksort q=new Quicksort();
 					q.quicksort(e.getArray(),0,e.getArray().length-1);
-					System.err.println("___________QUICKSORT __________");
+					System.err.println("___________Quicksort__________");
 					e.showArray(e.getArray());
 					break;
 				case 2:
@@ -59,20 +59,30 @@ class Menu{
 					e.showArray(e.getArray());
 					Bubblesort b=new Bubblesort();
 					b.bubble(e.getArray());
-					System.err.println("___________BUBBLESORT__________");
+					System.err.println("____________Bubblesort___________");
 					e.showArray(e.getArray());
 					break;
 				case 3:
+					System.err.println("___________ANTES__________");
+					e.showArray(e.getArray());
 					Radix r=new Radix();
+					r.AlgoritmoRadix(e.getArray());
+					System.err.println("___________Radix__________");
+					e.showArray(e.getArray());
 					break;
 				case 4:
+					System.err.println("___________ANTES__________");
+					e.showArray(e.getArray());
 					Shallsort s=new Shallsort();
+					s.algoritmoShell(e.getArray());
+					System.err.println("___________Shellsort__________");
+					e.showArray(e.getArray());
 					break;
 				case 5:
 					exec=false;
 					break;
 				default:
-					System.out.println("¡Intenta De Nuevo!");
+					System.out.println("!Intenta De Nuevo!");
 					break;
 			}
 		}
